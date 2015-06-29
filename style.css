@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font: 400 13px / 20px Lato;
+}
+body{
+    background: url(images/main-bg.jpg) no-repeat center center fixed;
+    background-size:cover;
+    height: auto;
+}
+header{
+    width: 308px;
+    height: 827px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -154px;
+    background: url(images/header-bg.png);
+    z-index: 10;
+}
+header p{
+    margin-top: 40px;
+}
+
+nav {
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top:40px;
+}
+nav ul li{
+    text-transform: uppercase;
+    padding: 15px 0;
+    position: relative;
+}
+nav ul li:after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    margin-left: -78px;
+    height: 2px;
+    width: 156px;
+    background: url(images/ul-li-after.png);
+    
+    
+}
+nav ul li:hover{
+    background-color: #705f5f;
+    cursor: pointer;
+}
+
+.headerLogo{
+    width: 256px;
+    height: 394px;
+    margin: auto;
+    margin-top: 40px;
+    background: url(images/header-logo-bg.png) center center;
+    text-align: center;
+    padding-top: 32px;
+}
+.headerLogo p{
+    position: relative;
+}
+.headerLogo p:before{
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -78px;
+    height: 2px;
+    width: 156px;
+    background: url(images/ul-li-after.png);
+}
+.telephone{
+    display: block;
+    margin-top: 16px;
+    font-size: 22px;
+}
+
+.mainWrapper{
+    margin: 0 auto;
+    width: 1140px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 1, 2, 0.3);
+    position: relative;
+}
+.mainWrapper-center{
+    overflow: hidden;
+}
+.mainWrapper-center:after{
+    clear: both
+}
+
+.mainWrapper-center div{
+    width: 570px;
+    height: 380px;
+    float: left;
+    position: relative;
+}
+.mainWrapper-center div img{
+    width: 100%;
+}
+
+.mainWrapper-center div:nth-child(2n) a{
+    right: 0px;
+    background:url(images/a-2n-bg.png);
+    text-align: right;
+}
+.mainWrapper-center div:nth-child(2n) a:hover{
+    background: url(images/a-bg-hover.png);
+}
+
+.mainWrapper-center div a{
+    display: block;
+    position: absolute;
+    top: 20px;
+    height: 50px;
+    width: 306px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(images/a-bg.png) center;
+    vertical-align: middle;
+    padding: 15px 
+}
+.mainWrapper-center div a:hover{
+   background: url(images/a-bg-hover-usual.png); 
+}
+
