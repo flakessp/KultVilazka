@@ -321,3 +321,53 @@ p.mail:before{
     margin-left: 12px;
 }
 
+/* **** page 3 **** */
+
+/*table*/
+table{
+    margin-top: 30px;
+    margin-left: 30px;
+    border-collapse: collapse;
+}
+th{
+    background-color: #28596e ;
+}
+
+td{
+    color: #635d4e;
+    font: 400 15px / 20px Lato;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border: 1px #b3aaa2;
+    border-bottom-style: dashed;
+    border-right-style: dashed;
+}
+tr td:last-child{
+    border-right-style: none;
+    text-align: center;
+}
+td img{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+td img:last-child{
+    margin-right: 0;
+}
+a.button-order{
+    margin: 0 auto;
+    display: block;
+    width: 85px;
+    background-color: #28596e;
+    height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+}
+a.button-order:hover{
+    background-color: #705f5f;
+}
+td{
+}
