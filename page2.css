@@ -199,5 +199,50 @@ article h2{
 footer{
     height: 88px;
     width: 100%;
-    
+    background-color: #efe5dc;
 }
+.footerWrapper:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footerWrapper  {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+}
+.footerWrapper div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.footer-info p,.footer-copy p, .footer-madeIn p{
+    font-size: 15px;
+    color:#635e4f; 
+}
+.footer-info p{
+    position: relative;
+    margin-left: 60px;
+    line-height: 35px;
+}
+.footer-info p:before{
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 2px;
+}
+p.phone:before{
+    content: url(images/icon-phone.png);
+    height: 14px;
+    width: 15px;
+}
+p.mail:before{
+    content: url(images/icon-mail.png);
+    height: 13px;
+    width: 17px;
+}
+.footer-social ul li{
+    display: inline;
+}
+
+
