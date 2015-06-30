@@ -163,7 +163,7 @@ section{
     width: 900px;
     
 }
-section h1 {
+section h1,.form h1 {
     font-size: 18px;
     color:#635e4f ;
     text-transform: uppercase;
@@ -422,4 +422,52 @@ a.button-order:hover{
     background-color: #705f5f;
 }
 td{
+}
+
+/****** FORM ********/
+.fullscreen{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: black;
+}
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+.form{
+    display: none;
+    width: 400px;
+    float: left;
+}
+.form-content{
+
+    padding: 20px;	
+display: block;
+overflow: hidden;
+}
+.form input{
+    display: block;
+height: 25px;
+left: 0;
+line-height: 25px;
+padding: 0 0 0 5px;
+text-align: left;
+width: 248px; 
+color: #8C8C8C;
+font-size: 13px;
+margin: 0px 0px 16px 0px;
+border:1px solid #ABADB3;
+}
+
+input[type=submit] {
+    background-color: #2f89a8;
+    color: white;
+    text-align: center;
+}
+input[type=submit]:hover {
+    background-color: #705f5f;
+    cursor: pointer;
 }
