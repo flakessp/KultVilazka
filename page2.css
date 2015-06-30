@@ -325,11 +325,20 @@ p.mail:before{
 
 /* ****** GALERY ****** */
 
-
+.section-gallery{
+    position: relative;
+    overflow: hidden;
+    margin-left:29px;
+    
+    width: 850px;
+}
 .gallery-wrapper{
+    margin: 0 auto;
     margin-top: 40px;
+    width: 850px;
     text-align: center;
     position: relative;
+    white-space: nowrap;
 }
 .gallery-wrapper img{
     max-width: 256px;
@@ -346,6 +355,7 @@ p.mail:before{
     display: block;
     height: 50px;
     width: 50px;
+    z-index: 999;
 }
 .prev{
     left: 50px;
