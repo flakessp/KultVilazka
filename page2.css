@@ -13,9 +13,25 @@ body{
 /* ****** HEADER ****** */
 header{
     height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
     background-color: #efe5dc;
     text-align: center;
-    vertical-align: middle
+    vertical-align: middle;
+    background: url(images/patter-bg.png);
+        -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.15);
+    -moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.15);
+    box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.15);
+}
+header:after{
+    content: "";
+    bottom:4px;
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #b1a68b;
 }
 header ul{
     padding-top: 15px;
@@ -24,6 +40,20 @@ header ul{
 header ul li{
     display: inline;
     margin-right: 44px;
+    position: relative;
+}
+header ul li:after{
+    content:'\00B7';
+    position: absolute;
+    right: -25px;
+    font-size:20px;
+    color: #28596e ;
+}
+header ul li:last-child:after{
+    content:'';
+    position: absolute;
+    right: -25px;
+    color: #28596e ;
 }
 header ul li:last-child{
     margin-right: 0;
@@ -38,12 +68,6 @@ header ul li a:hover{
     color:#635e4f ;
 }
 
-.mainWrapper{
-    margin: 0 auto;
-    width: 1245px;
-    height: 1235px;
-    background-color: #eae1d8;
-}
 
 /* ******  ASIDE ******  */
 aside{
@@ -111,9 +135,27 @@ nav ul li:hover{
     display: block;
     margin-top: 16px;
     font-size: 22px;
+    position: relative;
+}
+.telephone:before{
+    position: absolute;
+    content: url(images/icon-whitephone.png);
+    left: 22px;
+    bottom:1px;
 }
 
 /* ****** MAIN CONTENT ****** */
+.mainWrapper{
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 1245px;
+    height: 1235px;
+    background: url(images/patter-bg.png);
+    background-color: #eae1d8;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(50, 50, 50, 0.59);
+-moz-box-shadow:    0px 0px 27px 0px rgba(50, 50, 50, 0.59);
+box-shadow:         0px 0px 27px 0px rgba(50, 50, 50, 0.59);
+}
 
 section{
     float: left;
@@ -155,11 +197,14 @@ article h2{
 }
 .article-imageWrapper img{
     max-width: 100%;
+    outline: 3px solid white;
+    outline-offset: -3px;
 }
 .imageWrapper-priceBlock{
     display: block;
     position: absolute;
     bottom: 20px;
+    left: 3px;
     background: url(images/priceBlock-bg.png);
     width: 145px;
     height: 30px;
@@ -199,7 +244,20 @@ article h2{
 footer{
     height: 88px;
     width: 100%;
+    position: relative;
+    background: url(images/patter-bg.png);
     background-color: #efe5dc;
+            -webkit-box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.15);
+    -moz-box-shadow:    0px -5px 10px 0px rgba(50, 50, 50, 0.15);
+    box-shadow:         0px -5px 10px 0px rgba(50, 50, 50, 0.15);
+}
+footer:after{
+    content: "";
+    top:4px;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #b1a68b;
 }
 .footerWrapper:after{
     content: "";
@@ -222,7 +280,7 @@ footer{
 }
 .footer-info p{
     position: relative;
-    margin-left: 60px;
+    margin-left: 50px;
     line-height: 35px;
 }
 .footer-info p:before{
@@ -241,8 +299,25 @@ p.mail:before{
     height: 13px;
     width: 17px;
 }
+.footer-copy{
+    text-align: center;
+}
+.footer-social{
+    text-align: right;
+}
 .footer-social ul li{
     display: inline;
 }
-
+.footer-madeIn{
+    text-align: right;
+    vertical-align: middle;
+}
+.footer-madeIn p{
+    float: right;
+    line-height: 45px
+}
+.footer-madeIn img{
+    float: right;
+    margin-left: 12px;
+}
 
