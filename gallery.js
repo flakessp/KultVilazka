@@ -31,7 +31,6 @@ $('a.next').click(function (e) {
    
     //select all the a tag with name equal to modal
     $('a.button-order').click(function(e) {
-        console.log("loaded!")
         //Cancel the link behavior
         e.preventDefault();
         
@@ -43,7 +42,6 @@ $('a.next').click(function (e) {
     
         //Set height and width to mask to fill up the whole screen
         $('#mask').appendTo('body');
-
         $('#mask').css({'width':maskWidth,'height':maskHeight});
         
         //transition effect        
@@ -59,7 +57,7 @@ $('a.next').click(function (e) {
         $(id).css('left', winW/2-$(id).width()/2);
     
         //transition effect
-        $(id).fadeIn(2000); 
+        $(id).fadeIn(500); 
         
     });
     

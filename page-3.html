@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="page2.css">
     <title>Культвылазка</title>
       <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script src="modalwindow.js"></script>
 </head>
 <body>
     <header>
@@ -161,23 +160,31 @@
         </div>
     </footer>
     <div class="fullscreen">
-        <div class="form">
-            <div class="form-content">
-                    <h1>Форма заказа</h1>
-                    <form name="zakaz_form1" action="#" method="post" id="form_content_form" data-parsley-validate="" novalidate="">
-                        <input type="text" class="f_c_f_input" name="rout" value="Муром – Дивеево" placeholder="Маршрут" required="" data-parsley-id="8228">
-                        <input type="text" class="f_c_f_input hasDatepicker" name="date" id="datepicker" placeholder="Даты" required="" data-parsley-id="3374">
-                        <input type="text" class="f_c_f_input" name="count_d" placeholder="Кол-во дней (без дороги)" data-parsley-type="number" required="" data-parsley-id="4192">
-                        <input type="text" class="f_c_f_input" name="count_p" placeholder="Кол-во человек" data-parsley-type="number" required="" data-parsley-id="0931">
-                        <input type="text" class="f_c_f_input" name="count_sup" placeholder="Кол-во сопровождающих (для школьных групп)" data-parsley-type="number" data-parsley-id="9633">
-                        <input type="text" class="f_c_f_input" name="phone_z" id="phone_z" placeholder="Телефон" required="" data-parsley-id="9547">
-                        <input type="text" class="f_c_f_input" name="email_z" id="email_z" placeholder="E-mail" required="" data-parsley-maxlength="40" data-parsley-type="email" data-parsley-id="7616">
-                        <textarea class="f_c_f_input" name="wishes" id="comm_z" placeholder="Пожелания по туру:" data-parsley-minlength="2" data-parsley-maxlength="400" data-parsley-id="6220"></textarea>
-                        <input type="hidden" name="id_tour" value="183" data-parsley-id="4468">
-                        <input type="submit" name="send_zakaz_tour" id="tdb1" class="f_c_f_submit" value="Отправить запрос">
-                    </form>
-            </div>
+      <div id="boxes">
+              <div id="dialog" class="window">
+                  <div class="form">
+                    <div class="form-content">
+                            <h1>Форма заказа</h1>
+                            <form name="zakaz_form1" action="#" method="post" id="form_content_form" data-parsley-validate="" novalidate="">
+                                <input type="text" class="f_c_f_input" name="rout" value="Муром – Дивеево" placeholder="Маршрут" required="" data-parsley-id="8228">
+                                <input type="text" class="f_c_f_input hasDatepicker" name="date" id="datepicker" placeholder="Даты" required="" data-parsley-id="3374">
+                                <input type="text" class="f_c_f_input" name="count_d" placeholder="Кол-во дней (без дороги)" data-parsley-type="number" required="" data-parsley-id="4192">
+                                <input type="text" class="f_c_f_input" name="count_p" placeholder="Кол-во человек" data-parsley-type="number" required="" data-parsley-id="0931">
+                                <input type="text" class="f_c_f_input" name="count_sup" placeholder="Кол-во сопровождающих (для школьных групп)" data-parsley-type="number" data-parsley-id="9633">
+                                <input type="text" class="f_c_f_input" name="phone_z" id="phone_z" placeholder="Телефон" required="" data-parsley-id="9547">
+                                <input type="text" class="f_c_f_input" name="email_z" id="email_z" placeholder="E-mail" required="" data-parsley-maxlength="40" data-parsley-type="email" data-parsley-id="7616">
+                                <textarea class="f_c_f_input" name="wishes" id="comm_z" placeholder="Пожелания по туру:" data-parsley-minlength="2" data-parsley-maxlength="400" data-parsley-id="6220"></textarea>
+                                <input type="hidden" name="id_tour" value="183" data-parsley-id="4468">
+                                <input type="submit" name="send_zakaz_tour" id="tdb1" class="f_c_f_submit" value="Отправить запрос">
+                            </form>
+                    </div>
         </div>
+              </div>
+              
+           <div id="mask"></div>
+              
+        </div>
+        
     </div>
     <script src="gallery.js"></script>
 </body>
