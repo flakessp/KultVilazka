@@ -6,7 +6,7 @@ function moveLeft() {
     var last = $('.gallery-wrapper img:last-child');
     last.prependTo('.gallery-wrapper');
     $(".gallery-wrapper").css({left: "auto"});
-    $(".gallery-wrapper").css({right: slideWidth+"px"});
+    $(".gallery-wrapper").css({right: "290px"});
     $(".gallery-wrapper").animate({right: "0px"}, 1000);
 };
 function moveRight() {
